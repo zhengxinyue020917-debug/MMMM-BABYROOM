@@ -1,0 +1,49 @@
+.image1{
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    animation: wiggle 5s infinite ease-in-out;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  15%      { transform: translate(-5px, -3px) rotate(-1deg); }
+  30%      { transform: translate(4px, -4px) rotate(1deg); }
+  45%      { transform: translate(-3px, 5px) rotate(-0.5deg); }
+  60%      { transform: translate(6px, 2px) rotate(0.5deg); }
+  75%      { transform: translate(-4px, -2px) rotate(-0.5deg); }
+  90%      { transform: translate(2px, -5px) rotate(0.5deg); }
+}
+
+.image2:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes wiggle {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-3px, -2px) rotate(-1deg); }
+  40% { transform: translate(3px, 2px) rotate(1deg); }
+  60% { transform: translate(-2px, 3px) rotate(-0.5deg); }
+  80% { transform: translate(2px, -3px) rotate(0.5deg); }
+  100% { transform: translate(0, 0); }
+}
+
+.image3{
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }        /* 原点 */
+  25%      { transform: translate(-8px, -5px); }  /* 左上 */
+  50%      { transform: translate(8px, -3px); }   /* 右上 */
+  75%      { transform: translate(5px, 8px); }    /* 右下 */
+}
+
+.image4{
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
